@@ -1,0 +1,452 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.justifiy-between {
+  justify-content: space-between;
+}
+
+.algin-item {
+  align-items: center;
+}
+
+.justifiy-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.row {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.w-4 {
+  width: 25%;
+}
+
+.w-3 {
+  width: 33.33%;
+}
+
+.w-2 {
+  width: 50%;
+}
+
+.w-1 {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.heading h4 {
+  color: #dcbd68;
+}
+.heading h2 {
+  font-size: 33px;
+  padding-top: 5px;
+}
+
+.py {
+  padding: 100px 0;
+}
+
+header {
+  background-color: transparent;
+  padding: 30px 0;
+  position: fixed;
+  left: 0;
+  z-index: 99;
+  right: 0;
+}
+header h1 {
+  font-size: 19px;
+  padding-left: 9px;
+  color: #dcbd68;
+}
+header h1 span {
+  font-size: 13px;
+  padding-right: 90px;
+  color: white;
+  font-weight: 300;
+  letter-spacing: 10px;
+}
+header nav ul li:first-child a {
+  color: #dcbd68;
+  transition: all 0.4s linear;
+}
+header nav ul li:first-child a:hover {
+  color: white;
+}
+header nav ul li a {
+  color: white;
+  padding: 0 20px;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/header.webp");
+  background-size: cover;
+  position: relative;
+}
+.banner::after {
+  content: "";
+  width: 50%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.29);
+  position: absolute;
+  top: 0;
+}
+.banner .content {
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner .content h1 {
+  color: white;
+  z-index: 99;
+  font-size: 60px;
+  width: 600px;
+}
+.banner .content p {
+  color: white;
+  z-index: 1;
+  width: 500px;
+  margin: 20px 0;
+  font-size: 17px;
+  word-spacing: 2px;
+}
+.banner .content a {
+  padding: 15px 0;
+  width: 160px;
+  text-align: center;
+  color: white;
+  background-color: #dcbd68;
+  color: black;
+  font-size: 15px;
+  z-index: 9;
+}
+.banner .content a i {
+  padding-left: 8px;
+}
+
+.welcome .imgs {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.welcome .wel-content {
+  padding: 80px 50px 0 180px;
+}
+.welcome .wel-content h3 {
+  color: #dcbd68;
+  font-size: 25px;
+  padding-bottom: 5px;
+}
+.welcome .wel-content h1 {
+  width: 500px;
+  font-size: 35px;
+}
+.welcome .wel-content p {
+  color: rgba(0, 0, 0, 0.438);
+  font-size: 21px;
+  width: 500px;
+  margin: 30px 0;
+  line-height: 33px;
+}
+.welcome .wel-content a {
+  color: black;
+  background-color: #dcbd68;
+  padding: 15px 35px;
+  font-size: 14px;
+  font-weight: 300;
+  word-spacing: 1px;
+}
+.welcome .wel-content a i {
+  padding-left: 10px;
+}
+
+.count {
+  width: 100%;
+  height: 35vh;
+  background-image: url("../images/header.webp");
+  position: relative;
+  z-index: 9;
+  background-attachment: fixed;
+}
+.count::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+  position: absolute;
+}
+.count .count-content {
+  height: 35vh;
+  text-align: center;
+}
+.count h2 {
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.count h2 span {
+  font-size: 20px;
+  color: #dcbd68;
+  padding-left: 3px;
+}
+.count p {
+  color: rgba(255, 255, 255, 0.785);
+  margin: 20px 0;
+}
+
+.offer .offer-content {
+  padding: 90px 140px 0 90px;
+}
+.offer .offer-content p {
+  padding: 20px 100px 0 0;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.664);
+}
+.offer .offer-content .box {
+  margin-top: 30px;
+}
+.offer .offer-content .box span {
+  padding: 15px 20px;
+  font-size: 17px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+}
+.offer .offer-content .box h3 {
+  padding: 0 20px;
+}
+.offer .offer-content .box p {
+  padding: 0 20px;
+}
+.offer .offer-content a {
+  color: black;
+  background-color: #dcbd68;
+  padding: 15px 30px;
+  font-size: 14px;
+  margin: 40px 0;
+  font-weight: 300;
+  word-spacing: 1px;
+}
+.offer .offer-content a i {
+  padding-left: 10px;
+  letter-spacing: 3px;
+}
+
+.photo {
+  background: #f7f7f7;
+}
+.photo .photo-contain {
+  padding: 0 20px;
+  position: relative;
+}
+.photo .photo-contain img {
+  margin: auto;
+  width: 55px;
+}
+.photo .photo-contain .overlaye {
+  position: absolute;
+  top: -10px;
+  right: 45%;
+  width: 65px;
+  height: 65px;
+  background-color: #dcbd68;
+  border-radius: 50%;
+  z-index: -1;
+}
+.photo .photo-contain h3 {
+  font-size: 25px;
+  margin: 20px;
+}
+.photo .photo-contain p {
+  font-size: 19px;
+  line-height: 30px;
+  color: gray;
+}
+
+.PORTFOLIO .heading h2 {
+  margin-bottom: 50px;
+}
+.PORTFOLIO ul li:first-child a {
+  color: #dcbd68;
+}
+.PORTFOLIO ul li a {
+  color: gray;
+  margin: 15px;
+  font-size: 14px;
+}
+.PORTFOLIO img {
+  height: 300px;
+  width: 100%;
+  border: 10px solid white;
+}
+
+.rate {
+  text-align: center;
+}
+.rate .heading h2 {
+  margin: 5px 0 50px 0;
+}
+.rate .rate-content .img {
+  background-image: url("../images/rate1.webp");
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  border-radius: 50%;
+  margin-left: 520px;
+}
+.rate .rate-content .icon i {
+  font-size: 10px;
+  color: orange;
+  margin: 10px 0;
+}
+.rate .rate-content p {
+  margin: 10px 320px 40px 320px;
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(37, 37, 37);
+}
+.rate .rate-content p:last-child {
+  font-size: 15px;
+}
+.rate .rate-content h3 {
+  font-size: 22px;
+}
+
+.blog .heading {
+  padding: 80px 0 40px 0;
+}
+.blog .heading h4 {
+  padding-bottom: 10px;
+}
+.blog .blog-content .consept {
+  padding: 15px;
+  background: #f7f7f7;
+}
+.blog .blog-content .consept:hover {
+  background-color: white;
+}
+.blog .blog-content .consept img {
+  height: 180px;
+  width: 370px;
+  background-size: cover;
+  object-fit: cover;
+}
+.blog .blog-content .consept p {
+  color: rgba(128, 128, 128, 0.669);
+  font-size: 16px;
+}
+.blog .blog-content .consept p i {
+  font-size: 13px;
+  padding-right: 10px;
+}
+.blog .blog-content .consept h3 {
+  font-size: 27px;
+  margin: 10px 0 20px 0;
+}
+.blog .blog-content .consept h5 {
+  color: rgba(128, 128, 128, 0.669);
+  font-size: 22px;
+  font-weight: 100;
+}
+
+footer {
+  background-color: black;
+  padding: 100px;
+  color: white;
+}
+footer .footer1 {
+  padding-right: 30px;
+}
+footer .footer1 p {
+  color: rgba(255, 255, 255, 0.521);
+  font-size: 19px;
+  margin: 30px 0;
+}
+footer .footer1 .icon i {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 14px;
+  margin: 20px 20px 0 0;
+  font-size: 18px;
+  transition: all 0.2s linear;
+}
+footer .footer1 .icon i:hover {
+  background-color: white;
+  color: black;
+}
+footer .footer2 h2 {
+  padding-left: 30px;
+}
+footer .footer2 ul {
+  padding: 20px 40px 0 30px;
+}
+footer .footer2 a {
+  color: rgba(255, 255, 255, 0.308);
+  padding: 10px 0;
+  font-size: 19px;
+  transition: all 0.2s linear;
+}
+footer .footer2 a:hover {
+  color: #dcbd68;
+}
+footer .footer3 p {
+  font-size: 19px;
+  color: rgba(255, 255, 255, 0.521);
+  margin: 18px 0;
+}
+footer .footer3 p i {
+  color: #dcbd68;
+  padding: 0 14px 5px 0;
+}
+
+.copyright {
+  padding: 50px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
